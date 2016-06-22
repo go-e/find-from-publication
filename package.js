@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'percolate:find-from-publication',
-  version: '0.1.0',
+  name: 'csillag:find-from-publication',
+  version: '0.1.1',
   summary: 'Enable finding all documents that have been published by a given publication',
-  git: 'https://github.com/percolatestudio/find-from-publication.git'
+  git: 'https://github.com/go-e/find-from-publication.git'
 });
 
 Package.onUse(function (api, where) {
@@ -13,6 +13,6 @@ Package.onUse(function (api, where) {
 });
 
 Package.onTest(function (api) {
-  api.use(['tinytest', 'percolate:find-from-publication', 'underscore']);
+  api.use(['tinytest', 'csillag:find-from-publication', 'underscore']);
   api.addFiles('find-from-publication_tests.js', 'server');
 });
